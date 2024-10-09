@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Custom Admin Section Background */
+.bg-gray-1000 {
+  background-color: #1000; /* Set your desired gray color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Scrollbar styles (optional) */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #2a2a2a;
 }
